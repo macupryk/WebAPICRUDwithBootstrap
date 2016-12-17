@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="utf-8" />   
+    <link rel="shortcut icon" href="~/favicon.ico?v=2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Sandeepkumar Ramani</title>
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="~/Scripts/sweet-alert/sweet-alert.js"></script>
+    <link href="~/Scripts/sweet-alert/sweet-alert.min.css" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
+</head>
+<body ng-app="mygridexample">
+
+    <div class="container body-content">
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Using AngularJS, WEB API and Bootstrap</h1>
+                <p>by Sandeepkumar Ramani</p>
+            </div>
+        </div>
+
+        @RenderBody()
+
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Grid CRUD Example by Sandeepkumar Ramani</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/angular")   
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: true)
+</body>
+</html>
