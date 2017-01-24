@@ -1,5 +1,4 @@
 ﻿
-
 //Angular controller 
 myapp.controller('crudcontroller', function ($scope, crudservice) {
     
